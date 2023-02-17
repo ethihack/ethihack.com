@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Ethihack</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>
+  @-webkit-keyframes typing { from { width: 0; } }
+  @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+  #typing {
+    animation: typing 1s steps(9, end),
+              blink-caret .3s step-end infinite alternate;
+              border-right: .1em solid rgba(38, 255, 0, 1);
+              width: 270px; 
+  }
+
+  html, body {
+    margin: 0;
+    height: 100%;
+    background-color: black;
+    background-size: 14px 14px;
+    background-image: radial-gradient(circle, rgba(38, 255, 0, 0.5) 0.1px, #2d2d2d 1px);
+  }
+
+  h1, a {
+    text-decoration: none; 
+    font-size: 48px !important;
+    font: bold 300% Monaco, monospace;
+    width: 330px;
+    color: #9fed16;
+    margin: 0em;
+    padding: 0.1em 0em;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+    #showme {
+      color: #9fed16;
+    animation: showme 0s 1.7s forwards;
+    visibility: hidden;
+  }
+
+  .footerholder {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.footer {
+    color: white;
+    font-size: 18px;
+    background: none;
+    height: 50px;
+    padding: 10px 30px;
+    margin: auto;
+    width: 100%;
+}
+.footer a{
+    font-size: 18px !important;
+    background: none;
+}
+
+  @keyframes showme {
+    to   { visibility: visible; }
+  }
+</style>
+<body>
+<div style="width:270px; height:270px;  position: absolute; top:0; bottom: 0; left: 0; right: 0; margin: auto;">
+  <h1 id="typing">:~ whoami</h1>
+  <h1 id="showme"> <a href="https://blog.ethihack.com">ethihack</a></h1>
+</div>
+
+<div class="footerholder">
+  <div class="footer">
+    This website is under construction. For now, you can visit <a href="https://blog.ethihack.com">our_blog</a>
+  </div>
+</div>
+
+</body>
