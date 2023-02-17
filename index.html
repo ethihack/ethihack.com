@@ -16,8 +16,10 @@
   }
 
   html, body {
+    text-align: center;
     margin: 0;
     height: 100%;
+    width: 100%;
     background-color: black;
     background-size: 14px 14px;
     background-image: radial-gradient(circle, rgba(38, 255, 0, 0.5) 0.1px, #2d2d2d 1px);
@@ -27,7 +29,6 @@
     text-decoration: none; 
     font-size: 48px !important;
     font: bold 300% Monaco, monospace;
-    width: 330px;
     color: #9fed16;
     margin: 0em;
     padding: 0.1em 0em;
@@ -41,7 +42,6 @@
   }
 
   .footerholder {
-    background: none repeat scroll 0 0 transparent;
     bottom: 0;
     position: absolute;
     text-align: center;
@@ -50,15 +50,13 @@
 
 .footer {
     color: white;
+    width: 100%;
     font-size: 18px;
     background: none;
     height: 50px;
-    padding: 10px 30px;
-    margin: auto;
-    width: 100%;
 }
 .footer a{
-    font-size: 18px !important;
+    font-size: 16px !important;
     background: none;
 }
 
@@ -67,15 +65,18 @@
   }
 </style>
 <body>
-<div style="width:270px; height:270px;  position: absolute; top:0; bottom: 0; left: 0; right: 0; margin: auto;">
-  <h1 id="typing">:~ whoami</h1>
-  <h1 id="showme"> <a href="https://blog.ethihack.com">ethihack</a></h1>
+<div style="align-items: center; display: flex; justify-content: center; height: 100%; width: 100%;">
+  <span style="text-align: left;">
+    <h1 id="typing">:~ whoami</h1>
+    <h1 id="showme"> <a href="https://blog.ethihack.com">ethihack</a></h1>
+  </span>
 </div>
 
 <div class="footerholder">
-  <div class="footer">
-    This website is under construction. For now, you can visit <a href="https://blog.ethihack.com">our_blog</a>
-  </div>
+  <p class="footer">
+    This website is under construction. <br>
+    For now, you can visit <a href="https://blog.ethihack.com">our_blog</a>
+  </p>
 </div>
 
 </body>
